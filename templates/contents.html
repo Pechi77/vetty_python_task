@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+    {% block title %} {{title}} {% endblock %}
+    {% block content %}
+      <ul>
+      {% for content in contents %}
+        <li>{{ content }}</li>
+      {% endfor %}
+      </ul>
+    {% endblock %}
+
+</html>
